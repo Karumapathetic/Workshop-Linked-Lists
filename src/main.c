@@ -37,8 +37,8 @@ void ex01(void)
 void ex02(void)
 {
     list_t *list = create_node(1);
-    list->next = create_node(2);
 
+    list->next = create_node(2);
     delete_list(list);
 }
 
