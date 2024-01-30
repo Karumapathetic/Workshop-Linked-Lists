@@ -13,7 +13,6 @@
  *
  * @param list List to be deleted
  */
-
 void delete_list(list_t *list)
 {
     return NULL;

@@ -14,7 +14,6 @@
  * @param data Data needed in the node created
  * @return list_t* Return the list created
  */
-
 list_t *create_node(int data)
 {
     return NULL;

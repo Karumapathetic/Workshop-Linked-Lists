@@ -15,7 +15,6 @@
  * @param node Node to be inserted
  * @return list_t* Return the list with the node
  */
-
 list_t *add_node_to_start_of_list(list_t *list, list_t *node)
 {
     return NULL;

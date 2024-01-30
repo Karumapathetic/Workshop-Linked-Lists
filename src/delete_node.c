@@ -15,7 +15,6 @@
  * @param data Data to find the node
  * @return list_t* Return the list without the node
  */
-
 list_t *delete_node(list_t *list, int data)
 {
     return NULL;
