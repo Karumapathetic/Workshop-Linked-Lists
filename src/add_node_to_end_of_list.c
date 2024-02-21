@@ -17,5 +17,14 @@
 */
 list_t *add_node_to_end_of_list(list_t *list, list_t *node)
 {
-    return NULL;
+    list_t *tmp = list;
+
+    if (list == NULL)
+        return node;
+    if (node == NULL)
+        return list;
+    while (tmp->next != NULL)
+        tmp = tmp->next;
+    tmp->next = node;
+    return list;
 }

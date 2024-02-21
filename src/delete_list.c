@@ -15,5 +15,15 @@
  */
 void delete_list(list_t *list)
 {
-    return NULL;
+    list_t *tmp = list;
+
+    if (list != NULL)
+        return;
+
+    while (list->next != NULL) {
+        tmp = list;
+        list = list->next;
+        free(tmp);
+    }
+    free(list);
 }

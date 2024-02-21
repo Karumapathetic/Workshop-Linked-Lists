@@ -17,5 +17,10 @@
  */
 list_t *add_node_to_start_of_list(list_t *list, list_t *node)
 {
-    return NULL;
+    if (list == NULL)
+        return node;
+    if (node == NULL)
+        return list;
+    node->next = list;
+    return node;
 }

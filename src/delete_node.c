@@ -17,5 +17,22 @@
  */
 list_t *delete_node(list_t *list, int data)
 {
-    return NULL;
+    list_t *tmp = list;
+    list_t *prev = NULL;
+    list_t *next = NULL;
+
+    if (list == NULL)
+        return NULL;
+    while (tmp != NULL) {
+        if (tmp->data == data) {
+            next = tmp->next;
+            free(tmp);
+            prev->next = next;
+            return list;
+        }
+        prev = tmp;
+        tmp = tmp->next;
+    }
+    printf("Data pas trouvée\n");
+    return list;
 }

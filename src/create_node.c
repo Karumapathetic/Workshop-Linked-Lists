@@ -16,5 +16,9 @@
  */
 list_t *create_node(int data)
 {
-    return NULL;
+    list_t *node = malloc(sizeof(list_t));
+
+    node->data = data;
+    node->next = NULL;
+    return node;
 }
