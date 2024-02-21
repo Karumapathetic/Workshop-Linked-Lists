@@ -17,7 +17,7 @@ void delete_list(list_t *list)
 {
     list_t *tmp = list;
 
-    if (list != NULL)
+    if (list == NULL)
         return;
 
     while (list->next != NULL) {
